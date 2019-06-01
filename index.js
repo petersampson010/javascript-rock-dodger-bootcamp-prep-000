@@ -134,6 +134,7 @@ function moveDodger(e) {
 
 function moveDodgerLeft() {
   var left1 = 0
+  moveDL()
   function moveDL() {
     DODGER.style.left = `${left1 - 4}px`
     if (left1 >= 0) {
