@@ -135,7 +135,7 @@ function moveDodger(e) {
 function moveDodgerLeft() {
     var leftNumbers = dodger.style.left.replace('px', '')
     var left = parseInt(leftNumbers, 10)
-    if (left >= 356) {
+    if (left >= 4) {
     DODGER.style.left = `${left - 4}px`
     window.requestAnimationFrame(moveDodgerLeft)
     }
@@ -144,7 +144,7 @@ function moveDodgerLeft() {
 function moveDodgerRight() {
     var leftNumbers = dodger.style.left.replace('px', '')
     var left = parseInt(leftNumbers, 10)
-    if (left <= 4) {
+    if (left <= 356) {
     DODGER.style.left = `${left + 4}px`
     window.requestAnimationFrame(moveDodgerRight)
     }
