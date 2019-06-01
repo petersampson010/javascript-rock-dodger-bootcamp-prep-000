@@ -133,11 +133,11 @@ function moveDodger(e) {
 }
 
 function moveDodgerLeft() {
-  var left1 = DODGER.style.left
   function moveDL() {
-    
-    DODGER.style.left = `${left1 - 4}px`
-    if (left1 >= 0) {
+    var leftNumbers = dodger.style.left.replace('px', '')
+    var left = parseInt(leftNumbers, 10)
+    DODGER.style.left = `${left - 4}px`
+    if (left >= 0) {
       window.requestAnimationFrame(moveDL)
     }
   } 
