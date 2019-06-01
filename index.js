@@ -133,7 +133,7 @@ function moveDodger(e) {
 }
 
 function moveDodgerLeft() {
-  var left1 = dodgerLeftEdge
+  var left1 = DODGER.style.left
   function moveDL() {
     DODGER.style.left = `${left1 - 4}px`
     if (left1 >= 0) {
@@ -148,7 +148,7 @@ function moveDodgerLeft() {
 }
 
 function moveDodgerRight() {
-  var right1 = dodgerRightEdge
+  var right1 = DODGER.style.right
   function moveDR() {
     DODGER.style.right = `${right1 + 4}px`
     if (right1 <= 400) {
