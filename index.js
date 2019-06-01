@@ -142,13 +142,14 @@ function moveDodgerLeft() {
 }
 
 function moveDodgerRight() {
-  var rightNumbers = dodger.style.right.replace('px', '')
-  var right = parseInt(rightNumbers, 10)
+  var rightNumbers = dodger.style.right.replace('px', '');
+  var right = parseInt(rightNumbers, 10);
   if (right <= 396) { 
-    DODGER.style.right = `${right + 4}px`
+    DODGER.style.right = `${right + 4}px`;
     window.requestAnimationFrame(moveDodgerRight)
-    }
+  }
 }
+
 
 
 /**
